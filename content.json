@@ -1,0 +1,94 @@
+{
+  "name": "Abigail Chiu",
+  "introParagraphs": [
+    {
+      "text": "I’m an aspiring entrepreneur and writer. I’m currently studying economics & philosophy at Georgetown SFS and building an automated trade intelligence service. Before college, I worked across a large range of institutions (law firm, ministry of defense, bank compliance, consumer retail, literacy non-profit, b2b leadership consulting) during a gap year where I realized I was on the wrong side of the balance sheet."
+    },
+    {
+      "text": "I leverage AI to free cogs from the machine & help humans live their Gattungswesen; to create and pursue mission-aligned lives as gardeners of Eden. I was born in Calcutta, grew up in Singapore, and am currently based in Washington DC. Here’s some {link0} I enjoyed and {link1} on my mind.",
+      "links": [
+        {
+          "text": "writing",
+          "url": "https://example.com/writing"
+        },
+        {
+          "text": "themes",
+          "url": "https://example.com/themes"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "<strong>Essays:</strong> personal &gt; professional",
+      "items": [
+        {
+          "text": "{link0}",
+          "links": [
+            {"text": "On Meaning", "url": "https://example.com/on-meaning"}
+          ]
+        },
+        {
+          "text": "{link0}",
+          "links": [
+            {"text": "On Content", "url": "https://example.com/on-content"}
+          ]
+        },
+        {
+          "text": "{link0}",
+          "links": [
+            {"text": "Medieval Essay", "url": "https://example.com/medieval"}
+          ]
+        },
+        {
+          "text": "{link0}",
+          "links": [
+            {"text": "Tang Dynasty Poetry", "url": "https://example.com/tang"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "<strong>Projects:</strong> vibe-coded in &lt;1h",
+      "items": [
+        {"text": "Meme-Maker"},
+        {
+          "text": "{link0}",
+          "links": [
+            {
+              "text": "Data Scraper of all Georgetown RateMyProfessor pages",
+              "url": "https://example.com/rmp"
+            }
+          ]
+        },
+        {"text": "Google Gossip Girl: Trend Telegram Bot"},
+        {"text": "ML Posture Corrector"}
+      ]
+    },
+    {
+      "title": "<strong>Experiments:</strong> @ anne-laure le cunff",
+      "items": [
+        {
+          "text": "30 days of {link0}",
+          "links": [
+            {"text": "TikTok", "url": "https://www.tiktok.com"}
+          ]
+        },
+        {
+          "text": "{link0}: Airbnb for Friends of Friends",
+          "links": [
+            {"text": "CrashOver", "url": "https://example.com/crashover"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "<strong>Contact:</strong> startups/vc/tech + ppe/theology",
+      "items": [
+        {"text": "email: {link0}", "links": [{"text": "ac2486@georgetown.edu", "url": "mailto:ac2486@georgetown.edu"}]},
+        {"text": "substack: {link0}", "links": [{"text": "@abigailchium", "url": "https://example.com/substack"}]},
+        {"text": "X: {link0}", "links": [{"text": "@abigailchium", "url": "https://example.com/x"}]}
+      ]
+    }
+  ]
+}
