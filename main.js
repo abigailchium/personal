@@ -1,10 +1,4 @@
-let siteData = null;
-
-async function loadContent() {
-  const res = await fetch("content.json");
-  if (!res.ok) throw new Error("Unable to load content.json");
-  return res.json();
-}
+const siteData = window.SITE_DATA;
 
 function escapeHtml(str) {
   return String(str)
@@ -80,12 +74,5 @@ function route() {
   }
 }
 
-loadContent()
-  .then((data) => {
-    siteData = data;
-    window.addEventListener("hashchange", route);
-    route();
-  })
-  .catch((err) => {
-    document.getElementById("content").innerHTML = `<p>${escapeHtml(err.message)}</p>`;
-  });
+window.addEventListener("hashchange", route);
+route();
