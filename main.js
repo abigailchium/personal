@@ -1,70 +1,91 @@
+let siteData = null;
+
 async function loadContent() {
   const res = await fetch("content.json");
-  if (!res.ok) {
-    throw new Error("Unable to load content.json");
-  }
+  if (!res.ok) throw new Error("Unable to load content.json");
   return res.json();
 }
 
-function linkifyText(text, links = []) {
-  if (!links.length) return text;
-  let output = text;
-  links.forEach((link, index) => {
-    const placeholder = `{link${index}}`;
-    const anchor = `<a href="${link.url}" target="_blank" rel="noopener">${link.text}</a>`;
-    output = output.replaceAll(placeholder, anchor);
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function linkify(text, links = []) {
+  let out = escapeHtml(text);
+  links.forEach((link, i) => {
+    const anchor = `<a href="${escapeHtml(link.href)}">${escapeHtml(link.text)}</a>`;
+    out = out.replaceAll(`{link${i}}`, anchor);
   });
-  return output;
+  return out;
 }
 
-function renderParagraphs(container, paragraphs) {
-  paragraphs.forEach((item) => {
-    const p = document.createElement("p");
-    p.innerHTML = linkifyText(item.text, item.links);
-    container.appendChild(p);
+function renderHome(data) {
+  const parts = [];
+  parts.push(`<h1>${escapeHtml(data.title)}</h1>`);
+
+  (data.paragraphs || []).forEach((p) => {
+    parts.push(`<p>${linkify(p.text, p.links)}</p>`);
   });
-}
-
-function renderSection(container, section) {
-  const wrapper = document.createElement("div");
-  wrapper.className = "section";
-
-  const title = document.createElement("div");
-  title.className = "section-title";
-  title.innerHTML = linkifyText(section.title, section.titleLinks);
-  wrapper.appendChild(title);
-
-  if (section.items && section.items.length) {
-    const list = document.createElement("ul");
-    section.items.forEach((item) => {
-      const li = document.createElement("li");
-      li.innerHTML = linkifyText(item.text, item.links);
-      list.appendChild(li);
-    });
-    wrapper.appendChild(list);
-  }
-
-  container.appendChild(wrapper);
-}
-
-function renderPage(data) {
-  const container = document.getElementById("content");
-  container.innerHTML = "";
-
-  const title = document.createElement("h1");
-  title.textContent = data.name;
-  container.appendChild(title);
-
-  renderParagraphs(container, data.introParagraphs || []);
 
   (data.sections || []).forEach((section) => {
-    renderSection(container, section);
+    parts.push(`<div class="section">`);
+    parts.push(
+      `<div class="section-title">${linkify(section.title, section.titleLinks)}</div>`
+    );
+    if (section.items && section.items.length) {
+      parts.push(`<ul>`);
+      section.items.forEach((item) => {
+        parts.push(`<li>${linkify(item.text, item.links)}</li>`);
+      });
+      parts.push(`</ul>`);
+    }
+    parts.push(`</div>`);
   });
+
+  return parts.join("");
+}
+
+function renderSubPage(page) {
+  const parts = [];
+  parts.push(`<h2>${escapeHtml(page.title)}</h2>`);
+  (page.paragraphs || []).forEach((p) => {
+    parts.push(`<p>${linkify(p.text, p.links)}</p>`);
+  });
+  parts.push(`<a class="back" href="#/">← back</a>`);
+  return parts.join("");
+}
+
+function route() {
+  const container = document.getElementById("content");
+  const hash = window.location.hash.replace(/^#\/?/, "");
+  document.title = "Abigail Chiu";
+  window.scrollTo(0, 0);
+
+  if (!hash) {
+    container.innerHTML = renderHome(siteData.home);
+    return;
+  }
+
+  const page = siteData.pages && siteData.pages[hash];
+  if (page) {
+    document.title = `${page.title} — Abigail Chiu`;
+    container.innerHTML = renderSubPage(page);
+  } else {
+    container.innerHTML = `<h2>Not found</h2><p>That page doesn’t exist yet.</p><a class="back" href="#/">← back</a>`;
+  }
 }
 
 loadContent()
-  .then(renderPage)
+  .then((data) => {
+    siteData = data;
+    window.addEventListener("hashchange", route);
+    route();
+  })
   .catch((err) => {
-    const container = document.getElementById("content");
-    container.innerHTML = `<p class="muted">${err.message}</p>`;
+    document.getElementById("content").innerHTML = `<p>${escapeHtml(err.message)}</p>`;
   });
