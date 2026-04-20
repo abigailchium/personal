@@ -3,22 +3,22 @@ const Index = () => {
     <main className="min-h-screen bg-white flex justify-center px-6 py-16">
       <article
         className="w-full max-w-[640px] text-black text-left"
-        style={{ fontFamily: "'Times New Roman', Times, serif", fontSize: "14px", lineHeight: 1.6 }}
+        style={{ fontFamily: "'Times New Roman', Times, serif", fontSize: "16px", lineHeight: 1.5 }}
       >
-        <h1 className="italic font-normal mb-4" style={{ fontSize: "16pt" }}>Abigail Chiu</h1>
+        <h1 className="italic font-normal mb-5" style={{ fontSize: "24px" }}>Abigail Chiu</h1>
 
-        <p className="mb-3">
+        <p className="mb-4">
           I'm an aspiring entrepreneur and writer. I'm currently studying economics &amp; philosophy at Georgetown SFS. Before college, I worked across a large range of institutions (law firm, ministry of defense, bank compliance, consumer retail, literacy non-profit, b2b leadership consulting) during a gap year where I realised I wanted to move fast and break things.
         </p>
 
-        <p className="mb-3">
+        <p className="mb-4">
           I want to leverage AI to free cogs from the machine. I believe humans were created with a telos, their Gattungswesen: to develop gifts as gardeners of Eden. I was born in Calcutta, grew up in Singapore, and am currently based in Washington DC. Here are{" "}
           <a href="https://www.notion.so/reading-list-404b2dcaccb94d79a651adcace3836b8?source=copy_link" target="_blank" rel="noopener noreferrer" className="underline text-black">books</a> I've read and{" "}
           <a href="https://t.me/+I6dL55wWzLRkYWE1" target="_blank" rel="noopener noreferrer" className="underline text-black">things</a> on my mind.
         </p>
 
-        <p className="mb-1"><span className="underline">Writing:</span> personal &gt; professional</p>
-        <ul className="list-disc pl-8 mb-3">
+        <p className="mb-2"><span className="underline">Writing:</span> personal &gt; professional</p>
+        <ul className="list-disc pl-8 mb-5">
           <li>
             <a href="https://abigailchium.substack.com/p/on-meaning" target="_blank" rel="noopener noreferrer" className="underline text-black">On Meaning</a>
           </li>
@@ -30,8 +30,8 @@ const Index = () => {
           </li>
         </ul>
 
-        <p className="mb-1"><span className="underline">Experiments:</span> @ anne-laure le cunff</p>
-        <ul className="list-disc pl-8 mb-3">
+        <p className="mb-2"><span className="underline">Experiments:</span> @ anne-laure le cunff</p>
+        <ul className="list-disc pl-8 mb-5">
           <li>
             <a href="https://abigailchium.github.io/demo/" target="_blank" rel="noopener noreferrer" className="underline text-black">Ekeberg</a>: Automated Insights for Critical Metals Manufacturers
           </li>
@@ -42,8 +42,8 @@ const Index = () => {
           <li>CrashOver: Airbnb for Friends of Friends</li>
         </ul>
 
-        <p className="mb-1"><span className="underline">Projects:</span> vibe-coded in &lt;1h</p>
-        <ul className="list-disc pl-8 mb-3">
+        <p className="mb-2"><span className="underline">Projects:</span> vibe-coded in &lt;1h</p>
+        <ul className="list-disc pl-8 mb-5">
           <li>
             <a href="https://abigailchium.github.io/funprojects/" target="_blank" rel="noopener noreferrer" className="underline text-black">ML Posture Corrector</a>
           </li>
@@ -55,8 +55,8 @@ const Index = () => {
           </li>
         </ul>
 
-        <p className="mb-1"><span className="underline">Contact:</span> startups/vc/tech + ppe/theology</p>
-        <ul className="list-disc pl-8 mb-3">
+        <p className="mb-2"><span className="underline">Contact:</span> startups/vc/tech + ppe/theology</p>
+        <ul className="list-disc pl-8 mb-5">
           <li>email: ac2486@georgetown.edu</li>
           <li>
             substack:{" "}
