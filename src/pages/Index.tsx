@@ -51,7 +51,7 @@ const Index = () => {
             <a href="https://t.me/gossipgirltrendbot" target="_blank" rel="noopener noreferrer" className="underline text-black">Google Gossip Girl</a>: Trend Telegram Bot
           </li>
           <li>
-            <a href="https://makefunnygraphs.netlify.app/" target="_blank" rel="noopener noreferrer" className="underline text-black">Meme-Maker</a>
+            <a href="https://abigailchium.github.io/mememaker/" target="_blank" rel="noopener noreferrer" className="underline text-black">Meme-Maker</a>
           </li>
         </ul>
 
