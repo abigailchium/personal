@@ -3,7 +3,7 @@ const Index = () => {
     <main className="min-h-screen bg-white flex justify-center px-6 py-16">
       <article
         className="w-full max-w-[640px] text-black text-left"
-        style={{ fontFamily: "'Times New Roman', Times, serif", fontSize: "11.5pt", lineHeight: 1.0 }}
+        style={{ fontFamily: "'Times New Roman', Times, serif", fontSize: "14px", lineHeight: 1.6 }}
       >
         <h1 className="italic font-normal mb-4" style={{ fontSize: "16pt" }}>Abigail Chiu</h1>
 
