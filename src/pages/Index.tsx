@@ -8,11 +8,11 @@ const Index = () => {
         <h1 className="italic font-normal mb-3" style={{ fontSize: "16pt" }}>Abigail Chiu</h1>
 
         <p className="mb-3">
-          I'm an entrepreneur and writer. I'm currently studying economics &amp; philosophy at Georgetown SFS. Before college, I worked across a large range of institutions (law firm, ministry of defense, bank compliance, consumer retail, literacy non-profit, b2b leadership consulting) during a gap year where I realised I wanted to move fast and break things.
+          I'm an entrepreneur and writer. I'm currently studying economics &amp; philosophy at Georgetown SFS. Before college, I worked across a large range of institutions (law firm, ministry of defense, bank compliance, consumer retail, literacy non-profit, b2b leadership consulting) during a gap year where I discovered I really wanted high-agency.
         </p>
 
         <p className="mb-3">
-          I want to leverage AI to free cogs from the machine. I believe humans were created with a telos, their Gattungswesen: to develop gifts as gardeners of Eden. I was born in Calcutta, grew up in Singapore, and am currently based in Washington DC. Here are{" "}
+          I believe humans were made with a telos, their Gattungswesen: to develop gifts as gardeners of Eden -- to create. I was born in Calcutta, grew up in Singapore, and am currently based in Washington DC. Here are{" "}
           <a href="https://www.notion.so/reading-list-404b2dcaccb94d79a651adcace3836b8?source=copy_link" target="_blank" rel="noopener noreferrer" className="underline text-black">books</a> I've read and{" "}
           <a href="https://t.me/+I6dL55wWzLRkYWE1" target="_blank" rel="noopener noreferrer" className="underline text-black">things</a> on my mind.
         </p>
