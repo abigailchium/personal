@@ -8,7 +8,7 @@ const Index = () => {
         <h1 className="italic font-normal mb-3" style={{ fontSize: "16pt" }}>Abigail Chiu</h1>
 
         <p className="mb-3">
-          I'm an entrepreneur and writer. I'm currently studying economics &amp; philosophy at Georgetown SFS. Before college, I worked across a large range of institutions (law firm, ministry of defense, bank compliance, consumer retail, literacy non-profit, b2b leadership consulting) during a gap year where I discovered I really wanted autonomy and liked meeting high agency people.
+          I'm an entrepreneur and writer. I'm currently studying economics &amp; philosophy at Georgetown SFS. Before college, I worked across a large range of institutions (law firm, ministry of defense, bank compliance, consumer retail, literacy non-profit, b2b leadership consulting) during a gap year where I discovered I really wanted autonomy and liked meeting interesting people.
         </p>
 
         <p className="mb-3">
