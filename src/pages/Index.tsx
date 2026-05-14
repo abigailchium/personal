@@ -45,7 +45,7 @@ const Index = () => {
         <p className="mb-1"><span className="underline">Projects:</span> vibe-coded in &lt;1h</p>
         <ul className="list-disc pl-8 mb-3">
           <li>
-            <a href="https://t.me/gossipgirltrendbot" target="_blank" rel="noopener noreferrer" className="underline text-black">Google Gossip Girl</a>: Trend Telegram Bot
+            <a href="https://t.me/gossipgirltrendbot" target="_blank" rel="noopener noreferrer" className="underline text-black">Google Gossip Girl</a>
           </li>
           <li>
             <a href="https://abigailchium.github.io/mememaker/" target="_blank" rel="noopener noreferrer" className="underline text-black">Meme-Maker</a>
