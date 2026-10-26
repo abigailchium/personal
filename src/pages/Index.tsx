@@ -27,7 +27,7 @@ const Index = () => {
             <a href="https://abigailchium.substack.com/p/on-meaning" target="_blank" rel="noopener noreferrer" className="underline text-black">On Meaning</a>
           </li>
           <li>
-            <a href="https://abigailchium.substack.com/p/five-ideas-that-went-into-the-trash" target="_blank" rel="noopener noreferrer" className="underline text-black">Ideation Process</a>
+            <a href="https://abigailchium.substack.com/p/what-can-i-believe" target="_blank" rel="noopener noreferrer" className="underline text-black">What Can I Believe?</a>
           </li>
           <li>
             <a href="https://abigailchium.substack.com/p/use-of-tang-poetry-in-war" target="_blank" rel="noopener noreferrer" className="underline text-black">War in Tang Poetry</a>
@@ -37,16 +37,13 @@ const Index = () => {
         <p className="mb-1"><span className="underline">Projects:</span> vibe-coded in &lt;1h</p>
         <ul className="list-disc pl-8 mb-3">
           <li>
+            <a href="https://dressing-table-capsule.yellowoak10.chatgpt.site/" target="_blank" rel="noopener noreferrer" className="underline text-black">Dressing Table: Capsule Makeup</a>
+          </li>
+          <li>
             <a href="https://t.me/gossipgirltrendbot" target="_blank" rel="noopener noreferrer" className="underline text-black">Google Gossip Girl</a>
           </li>
           <li>
             <a href="https://abigailchium.github.io/mememaker/" target="_blank" rel="noopener noreferrer" className="underline text-black">Meme-Maker</a>
-          </li>
-          <li>
-            <a href="https://abigailchium.github.io/funprojects/" target="_blank" rel="noopener noreferrer" className="underline text-black">ML Posture Corrector</a>
-          </li>
-          <li>
-            <a href="https://dressing-table-capsule.yellowoak10.chatgpt.site/" target="_blank" rel="noopener noreferrer" className="underline text-black">Dressing Table: Capsule Makeup</a>
           </li>
         </ul>
 
