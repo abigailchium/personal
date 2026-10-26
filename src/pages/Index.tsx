@@ -8,15 +8,11 @@ const Index = () => {
         <h1 className="italic font-normal mb-3" style={{ fontSize: "16pt" }}>Abigail Chiu</h1>
 
         <p className="mb-3">
-          I'm an entrepreneur and writer. I'm a senior studying economics &amp; philosophy at Georgetown SFS; most recently I worked on GTM Ops at Clay. Before college, I worked across a large range of institutions (law firm, ministry of defense, bank compliance, consumer retail, literacy non-profit, b2b leadership consulting) during a gap year where I realized most workplaces kill gattungswesen.
+          I'm an entrepreneur and writer. I'm currently studying economics &amp; philosophy at Georgetown SFS; most recently I was at Clay on GTM Ops. Before college, I worked across a large range of institutions (law firm, ministry of defense, bank compliance, consumer retail, literacy non-profit, b2b leadership consulting) during a gap year where I realized most workplaces kill gattungswesen.
         </p>
 
         <p className="mb-3">
-          I enjoy contrarian, competitive cultures where Socratic habits are high status. I believe that AI is going to create momentous disruption &amp; wealth. I am excited to be a part of the wave, and have found the startup ecosystem a good fit.
-        </p>
-
-        <p className="mb-3">
-          I was born in Calcutta, grew up in Singapore, and am currently based in Washington DC. My childhood aspiration was to be an investigative journalist. My grown-up aspiration is to sell a company and move to New York. Here are{" "}
+          I enjoy contrarian, competitive cultures. I was born in Calcutta, grew up in Singapore, and am currently based in Washington DC. I want to sell a company and move to New York. I believe that AI is going to create momentous disruption and am excited to be a part of the wave. Here are{" "}
           <a href="https://www.notion.so/reading-list-404b2dcaccb94d79a651adcace3836b8?source=copy_link" target="_blank" rel="noopener noreferrer" className="underline text-black">books</a> I've read and{" "}
           <a href="https://t.me/+I6dL55wWzLRkYWE1" target="_blank" rel="noopener noreferrer" className="underline text-black">things</a> on my mind.
         </p>
